@@ -1,0 +1,23 @@
+.header__main {
+    background: url("../img/header_background.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.header__name {
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center; */
+}
+
+.header__name img {
+    width: 100px;
+}
+
+.header__menu {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+}

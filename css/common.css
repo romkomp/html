@@ -1,47 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 :root {
+    --text-color:white;
+    font-size: 16px;
     scroll-behavior: smooth;
+    font-family: 'Dosis', sans-serif;
+    color: var(--text-color);
 }
 
-.red-text {
-    color: red;
-  }
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
-  h2 {
-    font-family: Lobster, monospace;
-  }
+img {
+    display: block;
+    width: 100%;
+}
 
-  p {
-    font-size: 16px;
-    font-family: monospace;
-  }
-
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-
-  .smaller-image {
-    width: 100px;
-  }
-
-  .silver-background {
-    background-color: silver;
-    margin: 10px 0 10px 40px;
-  }
-
-  #cat-photo-form {
-    background-color: green !important;
-  }
-
-  [type='checkbox'] {
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
+h2 {
+    margin-left: 5px;
+}
