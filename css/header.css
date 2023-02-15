@@ -2,8 +2,10 @@
     width: 129px;
 }
 
-.tw-icon {
+.tw-icon, .tw-icon_second, .youtube_icon, .facebook_icon, .instagram_icon {
     height: 30px;
-    color: white;
-    fill: rgb(80, 20, 20);
+}
+
+.outer_bDW{
+    fill: rgb(255, 255, 255);
 }
