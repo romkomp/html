@@ -1,2 +1,4 @@
 @import url(common.css);
-@import url(header.css);
+@import url(header-section-contacts.css);
+@import url(header-section-nav.css);
+@import url(header-section-main.css);
