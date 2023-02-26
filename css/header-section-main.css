@@ -1,3 +1,10 @@
 header .banner {
-  background-image: url(../img/header-cover.jpg);
+  background: url(../img/header-cover.jpg) no-repeat;
+  padding: 0 24px;
+  background-position: 43.44% 84.95%;
+
+  min-height: 75vh;
+  min-width: 100%;
+  background-size: cover;
 }
+

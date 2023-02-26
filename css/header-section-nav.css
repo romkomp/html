@@ -1,4 +1,4 @@
-.header__logo {
+.logo__img {
   width: 129px;
 }
 
@@ -12,4 +12,29 @@
 
 .outer_bDW {
   fill: rgb(255, 255, 255);
+}
+
+@media (min-width: 991px) {
+  header .header__menu {
+    display: block;
+  }
+  header .horizontal_flow_white {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px 20px 40px;
+    margin: 0 -15px 0 -15px;
+  }
+  header .header__menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 372px;
+  }
+
+  header .header__social_icons {
+    display: flex;
+    min-width: 172px;
+  }
+  .header__social_icons a {
+    margin: 15px 7.5px 15px 7.5px;
+  }
 }
