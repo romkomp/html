@@ -82,6 +82,8 @@ function sum(arr, n) {
 }
 */
 
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup
+/*
 const contacts = [
   {
     firstName: 'Akira',
@@ -108,26 +110,83 @@ const contacts = [
     likes: ['JavaScript', 'Gaming', 'Foxes'],
   },
 ];
-// console.log(contacts[0].firstName !== 'Akira');
-// console.log(contacts[0].firstName === 'Akira');
 
 function lookUpProfile(name, prop) {
-  let tmp;
-  // for (let i = 0; i < contacts.length; i++) {
-  //   if (contacts[i].firstName === name && contacts[i].hasOwnProperty(prop)) {
-  //     return contacts[i][prop];
-  //   }
-  // }
+  let tmp = 0;
+  let tmp1 = 0;
   for (let i = 0; i < contacts.length; i++) {
-    if (contacts[i].firstName === name) {
-      tmp = 'No such contact';
-      // } else if (!contacts[i].hasOwnProperty(prop)) {
-      //     return 'No such property';
-      // }
-    } else {
-      tmp = 'else';
+    if (contacts[i].firstName === name && contacts[i].hasOwnProperty(prop)) {
+      return contacts[i][prop];
     }
   }
-  return tmp;
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      tmp++;
+    }
+  }
+  if (tmp === 0) {
+    return "No such contact";
+  }
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].hasOwnProperty(prop)) {
+      tmp1++;
+    }
+  }
+  if (tmp1 === 0) {
+    return "No such property";
+  }
 }
-console.log(lookUpProfile('Akira', 'address'));
+
+console.log(lookUpProfile('Akira', 'like'));
+*/
+/*
+function randomFraction() {
+  // return Math.round(Math.random() * 20);
+  return Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+}
+console.log(randomFraction());
+
+function convertToInteger(str) {
+  return parseInt(str, 2)
+}
+*/
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-countdown
+/*
+function countdown(n){
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1);
+    countArray.unshift(n); //push
+    return countArray;
+  }
+}
+console.log(countdown(5));
+*/
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-range-of-numbers
+function rangeOfNumbers(startNum, endNum) {
+  if(startNum === endNum) {
+    return [];
+  } else {
+    startNum++
+    const arr = arr.unshift(startNum);
+    rangeOfNumbers(startNum, endNum);
+    return arr;
+  }
+};
+
+console.log(rangeOfNumbers(5, 10));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
