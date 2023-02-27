@@ -165,28 +165,13 @@ console.log(countdown(5));
 */
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-range-of-numbers
 function rangeOfNumbers(startNum, endNum) {
-  if(startNum === endNum) {
+  if (startNum > endNum) {
     return [];
   } else {
-    startNum++
-    const arr = arr.unshift(startNum);
-    rangeOfNumbers(startNum, endNum);
+    const arr = rangeOfNumbers(startNum + 1, endNum);
+    arr.unshift(startNum);
     return arr;
   }
-};
+}
 
-console.log(rangeOfNumbers(5, 10));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(rangeOfNumbers(1, 10));
