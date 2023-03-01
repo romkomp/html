@@ -8,3 +8,7 @@ header .banner {
   background-size: cover;
 }
 
+header .banner__text {
+  color: var(--white-text-color);
+  
+}
