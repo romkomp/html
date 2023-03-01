@@ -163,7 +163,9 @@ function countdown(n){
 }
 console.log(countdown(5));
 */
+
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-range-of-numbers
+/*
 function rangeOfNumbers(startNum, endNum) {
   if (startNum > endNum) {
     return [];
@@ -173,5 +175,47 @@ function rangeOfNumbers(startNum, endNum) {
     return arr;
   }
 }
-
 console.log(rangeOfNumbers(1, 10));
+*/
+
+/*
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"],
+};
+function makeList(arr) {
+  // Only change code below this line
+  let failureItems = [];
+  for (let item of arr) {
+    failureItems.push(`<li class="text-warning">${item}</li>`);
+  }
+  // Only change code above this line
+
+  return failureItems;
+}
+const failuresList = makeList(result.failure);
+*/
+
+
+function giveMeFive(obj){
+  const arr = [];
+  for (let key in obj) {
+     console.log(key + obj[key]);
+  //   if(key.length === 4) {
+  //     arr.push(key);
+  //   } else {
+  //     arr.push(obj[key]);
+  //   }
+  }
+  return arr;
+}
+
+const ob = {
+  "key1":"value1",
+  "key2":"value2", 
+  "key3":"value3",
+  "key4":"value4", 
+  "key5":"value5"
+}
+console.log(giveMeFive(ob));
