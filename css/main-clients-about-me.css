@@ -1,0 +1,24 @@
+.main__clients_about_me {
+    padding: 20px 10px 20px 10px;
+}
+
+.main__clients_about_me img {
+    max-width: 300px;
+}
+
+.clients__title {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.client_item {
+    padding: 5px;
+}

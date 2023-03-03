@@ -14,6 +14,22 @@
   fill: rgb(255, 255, 255);
 }
 
+.header__menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header__menu_item {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0 10px 0 10px;
+}
+
+.header__menu_item:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 991px) {
   header .header__menu {
     display: block;
