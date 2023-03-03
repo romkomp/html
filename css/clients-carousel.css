@@ -1,0 +1,7 @@
+.clients-carousel__slides {
+    min-height: 350px;
+}
+
+.clients-carousel__slides img {
+    width: 300px;
+}

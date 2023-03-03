@@ -2,8 +2,12 @@
     padding: 20px 10px 20px 10px;
 }
 
-.main__clients_about_me img {
+.client_item img {
     max-width: 300px;
+}
+
+.button_carousel img {
+    width: 20px;
 }
 
 .clients__title {
@@ -21,4 +25,10 @@
 
 .client_item {
     padding: 5px;
+}
+
+.clients-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
