@@ -1,13 +1,16 @@
 (() => {
 
     const slides = [
-        '<div><img src="img/client_JessicaDrill.jpg" alt="Jessica Drill"></div>',
-        '<div><img src="img/client_JordanPeterson.jpg" alt="Jordan Peterson"></div>',
-        '<div><img src="img/client_LisaWilson.jpg" alt="Lisa Wilson"></div>'
+        `<div class="client_item"><img src="img/client_JessicaDrill.jpg" alt="Jessica Drill">
+        <div class="client_name">Jessica Drill</div></div>`,
+        `<div class="client_item"><img src="img/client_JordanPeterson.jpg" alt="Jordan Peterson">
+        <div class="client_name">Jordan Peterson</div></div>`,
+        `<div class="client_item"><img src="img/client_LisaWilson.jpg" alt="Lisa Wilson">
+        <div class="client_name">Lisa Wilson</div></div>`
     ];
 
     let currentSlide = 0;
-    
+
     function renderSlides(slides) {
         const slidesContainer = document.querySelector('.clients-carousel__slides');
         slidesContainer.innerHTML = slides[currentSlide];
@@ -18,7 +21,7 @@
                 const thirdSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
                 slidesContainer.innerHTML += slides[thirdSlide];
             }
-        } 
+        }
     }
 
     function nextSlide() {
@@ -40,6 +43,11 @@
     nextButton.addEventListener('click', nextSlide);
 
     const prevButton = document.querySelector('.clients-carousel__prev');
-    nextButton.addEventListener('click', prevSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+    window.addEventListener('resize', () => {
+        renderSlides(slides);
+    })
+
 
 })();

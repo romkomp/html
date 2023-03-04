@@ -5,25 +5,25 @@
             name: 'Jessica Drill',
             status: 'CARDIO TRAINING / 15 WEEKS',
             image: 'img/client_JessicaDrill.jpg',
-            text: `\"After 15 weeks of training, I began to feel much better! I chose cardio
+            text: `After 15 weeks of training, I began to feel much better! I chose cardio
             training for myself as it is a great way to become healthier, stronger, and more active. Thanks to my
-            amazing coach!\"`
+            amazing coach!`
         },
         {
             id: 2,
             name: 'Jordan Peterson',
             status: 'POWERLIFTING / 15 WEEKS',
             image: 'img/client_JordanPeterson.jpg',
-            text: `\"Steve stimulates everybody to reveal their full potential. I have seen amazing
-            results over the last several weeks! His nutritional advice is also very helpful. Thanks a lot!\"`
+            text: `Steve stimulates everybody to reveal their full potential. I have seen amazing
+            results over the last several weeks! His nutritional advice is also very helpful. Thanks a lot!`
         },
         {
             id: 3,
             name: 'Lisa Wilson',
             status: 'WEIGHT LOSS / 18 WEEKS',
             image: 'img/client_LisaWilson.jpg',
-            text: `\"Steve Rock really loves what he does, and he is committed to helping people to
-            achieve their health and fitness dream goals. Very professional and friendly coach.\"`
+            text: `Steve Rock really loves what he does, and he is committed to helping people to
+            achieve their health and fitness dream goals. Very professional and friendly coach.`
         }
     ];
 

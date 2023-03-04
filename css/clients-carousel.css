@@ -1,7 +1,24 @@
+.clients-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 500px; */
+}
+
 .clients-carousel__slides {
-    min-height: 350px;
+    /* min-height: 350px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .clients-carousel__slides img {
-    width: 300px;
+    min-width: 500px;
+    min-height: 550px;
+    object-fit: cover;
+    /* padding: 0 10px 0 10px; */
+}
+
+.client_name {
+    text-align: right;
 }
